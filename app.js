@@ -64,7 +64,7 @@ document.getElementById('cart-btn').addEventListener('click', () => {
 document.getElementById('place-order').addEventListener('click', () => {
   if(Object.keys(cart).length===0){ alert('Cart is empty'); return }
   // Demo: show order summary and clear cart
-  alert('Order placed (demo). Total: ₹' + document.getElementById('cart-total').textContent)
+  alert('Order placed . Total: ₹' + document.getElementById('cart-total') 'THANKS FOR BUYING'.textContent)
   cart = {}
   updateCartUI()
   document.getElementById('checkout').classList.add('hidden')
