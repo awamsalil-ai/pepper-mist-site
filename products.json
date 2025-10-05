@@ -25,9 +25,9 @@
   },
   {
     "id": "kasturi",
-    "name": "/home/hp/Downloads/kasturi-manjal.jpg",
+    "name": "Kasturi majal",
     "price": 80,
-    "image": "images/kasturi.jpg",
+    "image": "/home/hp/Downloads/kasturi-manjal.jpg",
     "sizes": [
       {"size": "50g", "price": 80},
       {"size": "100g", "price": 150}
