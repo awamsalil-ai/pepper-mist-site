@@ -1,0 +1,48 @@
+[
+  {
+    "id": "pepper",
+    "name": "Black Pepper",
+    "price": 120,
+    "image": "/home/hp/Downloads/pepper.jpg",
+    "sizes": [
+      {"size": "50g", "price": 120},
+      {"size": "100g", "price": 220},
+      {"size": "150g", "price": 320},
+      {"size": "200g", "price": 400}
+    ]
+  },
+  {
+    "id": "cashew",
+    "name": "Cashew Nut",
+    "price": 150,
+    "image": "/home/hp/Downloads/chew.jpg",
+    "sizes": [
+      {"size": "50g", "price": 150},
+      {"size": "100g", "price": 280},
+      {"size": "150g", "price": 400},
+      {"size": "200g", "price": 520}
+    ]
+  },
+  {
+    "id": "kasturi",
+    "name": "/home/hp/Downloads/kasturi-manjal.jpg",
+    "price": 80,
+    "image": "images/kasturi.jpg",
+    "sizes": [
+      {"size": "50g", "price": 80},
+      {"size": "100g", "price": 150}
+    ]
+  },
+  {
+    "id": "coffee",
+    "name": "Wayanad Coffee",
+    "price": 100,
+    "image": "/home/hp/Downloads/Roasted_coffee_beans.jpg",
+    "sizes": [
+      {"size": "50g", "price": 100},
+      {"size": "100g", "price": 180},
+      {"size": "200g", "price": 340}
+    ]
+  }
+]
+

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Pepper Mist — Shop</title>
+  <meta name="description" content="Buy Wayanad spices & nuts — pepper, cashew, kasturi manjal, coffee. Packets 50g–200g">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand">Pepper Mist Wayanad</h1>
+      <nav>
+        <a href="#shop">Shop</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <button id="cart-btn">Cart (<span id="cart-count">0</span>)</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="hero">
+      <h2>Fresh spices & nuts from Wayanad</h2>
+      <p>Authentic, small-batch, hand-packed products.</p>
+    </section>
+
+    <section id="shop">
+      <h2>Shop</h2>
+      <div id="products" class="grid"></div>
+    </section>
+
+    <section id="checkout" class="hidden">
+      <h2>Checkout (Demo)</h2>
+      <div id="cart-items"></div>
+      <p>Total: ₹<span id="cart-total">0</span></p>
+      <button id="place-order">Place Order (Demo)</button>
+    </section>
+
+    <section id="about">
+      <h2>About Pepper Mist Wayanad</h2>
+      <p>We are a homestay-grown small business selling fresh spices and nuts.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>WhatsApp: +91-XXXXXXXXXX</p>
+    </section>
+  </main>
+
+  <template id="product-template">
+    <div class="card">
+      <img src="" alt="" class="product-image">
+      <h3 class="product-title"></h3>
+      <p class="product-price">₹0</p>
+      <label>Packet size:
+        <select class="size-select"></select>
+      </label>
+      <button class="add-to-cart">Add to cart</button>
+    </div>
+  </template>
+
+  <script src="app.js"></script>
+</body>
+</html>

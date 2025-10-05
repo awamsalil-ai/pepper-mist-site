@@ -1,0 +1,14 @@
+:root{--accent:#2e7d32;--muted:#444}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;margin:0;color:#222}
+.container{max-width:980px;margin:0 auto;padding:16px}
+.site-header{background:#444;border-bottom:1px solid #eee}
+.site-header .container{display:flex;align-items:center;justify-content:space-between}
+.brand{margin:12px 0;color:var(--accent)}
+nav a{margin-right:12px;color:var(--muted);text-decoration:none}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px}
+.card{border:1px solid #eee;padding:12px;border-radius:8px;background:#fff}
+.product-image{width:100%;height:160px;object-fit:cover;background:#f6f6f6}
+.hidden{display:none}
+button{background:var(--accent);color:#fff;border:none;padding:8px 12px;border-radius:6px;cursor:pointer}
+.size-select{margin-left:8px}
+#checkout{margin-top:20px}
