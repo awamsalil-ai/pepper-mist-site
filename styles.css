@@ -1,14 +1,55 @@
-:root{--accent:#2e7d32;--muted:#444}
-body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;margin:0;color:#222}
-.container{max-width:980px;margin:0 auto;padding:16px}
-.site-header{background:#444;border-bottom:1px solid #eee}
-.site-header .container{display:flex;align-items:center;justify-content:space-between}
-.brand{margin:12px 0;color:var(--accent)}
-nav a{margin-right:12px;color:var(--muted);text-decoration:none}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px}
-.card{border:1px solid #eee;padding:12px;border-radius:8px;background:#fff}
-.product-image{width:100%;height:160px;object-fit:cover;background:#f6f6f6}
-.hidden{display:none}
-button{background:var(--accent);color:#fff;border:none;padding:8px 12px;border-radius:6px;cursor:pointer}
-.size-select{margin-left:8px}
-#checkout{margin-top:20px}
+:root {
+  --primary: #1b3022;
+  --accent: #c5a35d;
+  --bg: #fdfcf8;
+  --text: #2d2d2d;
+  --light-gray: #f4f4f2;
+}
+
+* { box-sizing: border-box; }
+body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); margin: 0; scroll-behavior: smooth; }
+h1, h2, h3, .brand { font-family: 'Playfair Display', serif; }
+
+.container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+
+/* Header */
+.site-header { background: #fff; padding: 1.5rem 0; position: sticky; top: 0; z-index: 100; border-bottom: 1px solid rgba(0,0,0,0.05); }
+.site-header .container { display: flex; justify-content: space-between; align-items: center; }
+.brand { color: var(--primary); font-size: 1.8rem; margin: 0; }
+nav a { text-decoration: none; color: var(--text); margin-right: 25px; font-weight: 600; font-size: 0.8rem; text-transform: uppercase; }
+#cart-btn { background: var(--primary); color: white; border: none; padding: 10px 20px; border-radius: 40px; cursor: pointer; }
+
+/* Hero */
+#hero { background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1599940824399-b87987cb9723?auto=format&fit=crop&w=1600&q=80'); background-size: cover; background-position: center; color: white; padding: 120px 0; text-align: center; margin-bottom: 60px; }
+#hero h2 { font-size: 3.5rem; margin: 10px 0; }
+.btn-primary { display: inline-block; margin-top: 20px; padding: 15px 35px; background: var(--accent); color: white; text-decoration: none; font-weight: bold; }
+
+/* Shop & Search */
+.shop-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 40px; flex-wrap: wrap; }
+#search-bar { padding: 12px; border: 1px solid #ddd; width: 300px; border-radius: 4px; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 40px; }
+.card { background: white; border: 1px solid var(--light-gray); transition: transform 0.4s; }
+.card:hover { transform: translateY(-10px); }
+.image-container { height: 320px; overflow: hidden; }
+.product-image { width: 100%; height: 100%; object-fit: cover; transition: 0.6s; }
+.card:hover .product-image { transform: scale(1.1); }
+.card-body { padding: 25px; text-align: center; }
+.product-price-display { color: var(--accent); font-weight: 600; font-size: 1.2rem; }
+.size-select { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ddd; }
+.add-to-cart { width: 100%; background: var(--primary); color: white; border: none; padding: 12px; cursor: pointer; font-weight: 600; }
+
+/* Checkout */
+.checkout-card { background: white; padding: 40px; border: 1px solid var(--accent); margin: 40px 0; }
+.btn-order { background: #25d366; color: white; border: none; padding: 15px 30px; font-weight: bold; width: 100%; cursor: pointer; }
+.hidden { display: none; }
+
+/* Reviews */
+#reviews { padding: 80px 0; text-align: center; }
+.reviews-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 40px; }
+.review-card { padding: 30px; background: #fff; border: 1px solid #eee; }
+.stars { color: var(--accent); margin-bottom: 15px; }
+.review-text { font-style: italic; color: #666; }
+.review-author { font-weight: 600; font-size: 0.8rem; text-transform: uppercase; color: var(--primary); }
+
+footer { background: #fff; padding: 40px 0; text-align: center; border-top: 1px solid #eee; }
