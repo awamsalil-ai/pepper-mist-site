@@ -1,33 +1,27 @@
 [
   {
     "id": "pepper",
-    "name": "Black Pepper",
-    "price": 120,
-    "image": "/home/hp/Downloads/pepper.jpg",
+    "name": "Tellicherry Black Pepper",
+    "image": "https://images.unsplash.com/photo-1599940824399-b87987cb9723?auto=format&fit=crop&w=600&q=80",
     "sizes": [
       {"size": "50g", "price": 120},
       {"size": "100g", "price": 220},
-      {"size": "150g", "price": 320},
       {"size": "200g", "price": 400}
     ]
   },
   {
     "id": "cashew",
-    "name": "Cashew Nut",
-    "price": 150,
-    "image": "/home/hp/Downloads/chew.jpg",
+    "name": "Wayanad Whole Cashews",
+    "image": "https://images.unsplash.com/photo-1509911595703-51fb1f31891a?auto=format&fit=crop&w=600&q=80",
     "sizes": [
-      {"size": "50g", "price": 150},
       {"size": "100g", "price": 280},
-      {"size": "150g", "price": 400},
       {"size": "200g", "price": 520}
     ]
   },
   {
     "id": "kasturi",
-    "name": "Kasturi majal",
-    "price": 80,
-    "image": "/home/hp/Downloads/kasturi-manjal.jpg",
+    "name": "Wild Kasturi Manjal",
+    "image": "https://images.unsplash.com/photo-1615485240388-187a4fd992c5?auto=format&fit=crop&w=600&q=80",
     "sizes": [
       {"size": "50g", "price": 80},
       {"size": "100g", "price": 150}
@@ -35,11 +29,9 @@
   },
   {
     "id": "coffee",
-    "name": "Wayanad Coffee",
-    "price": 100,
-    "image": "/home/hp/Downloads/Roasted_coffee_beans.jpg",
+    "name": "Single Origin Coffee Beans",
+    "image": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=600&q=80",
     "sizes": [
-      {"size": "50g", "price": 100},
       {"size": "100g", "price": 180},
       {"size": "200g", "price": 340}
     ]
