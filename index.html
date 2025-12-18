@@ -3,61 +3,89 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Pepper Mist — Shop</title>
-  <meta name="description" content="Buy Wayanad spices & nuts — pepper, cashew, kasturi manjal, coffee. Packets 50g–200g">
+  <title>Pepper Mist — Premium Wayanad Spices</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="site-header">
     <div class="container">
-      <h1 class="brand">Pepper Mist Wayanad</h1>
+      <h1 class="brand">Pepper Mist</h1>
       <nav>
-        <a href="#shop">Shop</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+        <a href="#shop">Collection</a>
+        <a href="#reviews">Reviews</a>
         <button id="cart-btn">Cart (<span id="cart-count">0</span>)</button>
       </nav>
     </div>
   </header>
 
-  <main class="container">
+  <main>
     <section id="hero">
-      <h2>Fresh spices & nuts from Wayanad</h2>
-      <p>Authentic, small-batch, hand-packed products.</p>
+      <div class="container">
+        <span class="sub-title">Wayanad’s Finest Harvest</span>
+        <h2>Fresh Spices & Nuts</h2>
+        <p>Authentic, small-batch, hand-packed products delivered from our home to yours.</p>
+        <a href="#shop" class="btn-primary">Shop the Collection</a>
+      </div>
     </section>
 
-    <section id="shop">
-      <h2>Shop</h2>
-      <div id="products" class="grid"></div>
-    </section>
+    <div class="container">
+      <section id="shop">
+        <div class="shop-header">
+          <h2 class="section-title">The Collection</h2>
+          <input type="text" id="search-bar" placeholder="Search for spices, coffee...">
+        </div>
+        <div id="products" class="grid"></div>
+      </section>
 
-    <section id="checkout" class="hidden">
-      <h2>Checkout</h2>
-      <div id="cart-items"></div>
-      <p>Total: ₹<span id="cart-total">0</span></p>
-      <button id="place-order">Place Order </button>
-    </section>
+      <section id="checkout" class="hidden">
+        <div class="checkout-card">
+          <h2>Your Selection</h2>
+          <div id="cart-items"></div>
+          <div class="cart-summary">
+            <p>Total: <strong>₹<span id="cart-total">0</span></strong></p>
+            <button id="place-order" class="btn-order">Place Order via WhatsApp</button>
+          </div>
+        </div>
+      </section>
 
-    <section id="about">
-      <h2>About Pepper Mist Wayanad</h2>
-      <p>We are a homestay-grown small business selling fresh spices and nuts.</p>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>WhatsApp: +91-9526723445</p>
-    </section>
+      <section id="reviews">
+        <h2 class="section-title">From Our Table to Yours</h2>
+        <div class="reviews-grid">
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p class="review-text">"The aroma of the Black Pepper is unlike anything from a supermarket."</p>
+            <p class="review-author">— Priya R., Bangalore</p>
+          </div>
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p class="review-text">"The Kasturi Manjal is pure and authentic. Perfect for my skincare."</p>
+            <p class="review-author">— Sarah M., Kochi</p>
+          </div>
+        </div>
+      </section>
+    </div>
   </main>
+
+  <footer>
+    <div class="container" id="contact">
+      <p>Inquiries: <strong>+91-XXXXXXXXXX</strong></p>
+      <p>&copy; 2024 Pepper Mist Wayanad</p>
+    </div>
+  </footer>
 
   <template id="product-template">
     <div class="card">
-      <img src="" alt="" class="product-image">
-      <h3 class="product-title"></h3>
-      <p class="product-price">₹0</p>
-      <label>Packet size:
-        <select class="size-select"></select>
-      </label>
-      <button class="add-to-cart">Add to cart</button>
+      <div class="image-container"><img src="" alt="" class="product-image"></div>
+      <div class="card-body">
+        <h3 class="product-title"></h3>
+        <p class="product-price-display">₹0</p>
+        <div class="input-group">
+          <label>Select Weight</label>
+          <select class="size-select"></select>
+        </div>
+        <button class="add-to-cart">Add to Bag</button>
+      </div>
     </div>
   </template>
 
